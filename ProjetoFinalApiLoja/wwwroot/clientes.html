@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table { width: 100%; }
+
+        table, th, td { border: 1px solid black; }
+
+        th, td {
+            padding: 5px;
+            text-align: center;
+        }
+
+        th {
+            background-color: black;
+            color: red
+        }
+    </style>
+</head>
+<body>
+    <div style="position:relative;"> </div>
+    <div style="opacity:0.3;position:absolute;left:-10px;top:-20px;width:2000px;height:80px;background-color:black"></div>
+    <div style="opacity:0.3;position:absolute;left:-10px;top:-20px;width:2000px;height:80px;background-color:black"></div>
+
+    <h2 style="font-family:Verdana;text-align:center;">Clientes</h2>
+
+    <table>
+        <tr>
+            <th>Cliente Id</th>
+            <th>Nome</th>
+            <th>Id Loja</th>
+
+        </tr>
+        <tbody id="clientes"></tbody>
+    </table>
+
+    <script src="/js/clientes.js" asp-append-version="true"></script>
+    <script type="text/javascript">getClientes();</script>
+
+</body>
+</html>
